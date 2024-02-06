@@ -7,8 +7,7 @@ import { data } from "../utils/data";
 const Pies = () => {
   const location = useLocation();
 
-  
-
+  console.log(location);
   const filteredData = data.filter((item) => {
     if (location.pathname === "/allpies") {
       return item;
@@ -28,7 +27,7 @@ const Pies = () => {
         </div>
         <div className="content w-[90%] flex flex-col gap-5 pb-5 overflow-x-auto mt-4">
           <h1 className="font-bold text-xl">Our Selection of Pies</h1>
-         <Tabel filteredData={filteredData} />
+          <Tabel filteredData={filteredData} />
           {/* <table>
             <caption className="pb-3">Current Selection of Pies</caption>
             <thead>

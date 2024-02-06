@@ -20,19 +20,18 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-if(data.email!=''){
-   alert(
-      `name:${data.firstname || ""},
+    if (data.email != "") {
+      alert(
+        `name:${data.firstname || ""},
       lastname:${data.lastname},
       Email:${data.email || ""},
       Date:${data.date || ""},
       Country:${data.country || ""},
       message${data.textmsg || ""}`
-    );
-}
-  else{
-    alert('fill all');
-  }
+      );
+    } else {
+      alert("fill all");
+    }
   };
 
   return (
